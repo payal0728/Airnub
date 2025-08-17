@@ -1,0 +1,679 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ms-auto">
+        <div class="container-fluid ">
+            <div class="container w-50">
+                <a class="navbar-brand" href="#">
+                    <img src="./Assets/Airbnb.png" alt="" style="height: 3rem; width: 5rem;">
+                </a>
+            </div>
+            <div class=" container d-flex gap-5 ms-auto pe-0 me-0">
+                <div class="collapse navbar-collapse CustomList me-5" id="navbarSupportedContent" style="margin-left: 30px;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-4">
+                        <li class="nav-item LogoItem ">
+                            <p class="d-flex "><img src="./Assets/home.png" class="LogoImg" alt="" width="40" height="40">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </p>
+                        </li>
+                        <li class="nav-item LogoItem ">
+                            <p class="d-flex"><img src="./Assets/ballon.png" class="LogoImg"alt="" width="50" height="40">
+                                <a class="nav-link " href="#">Experience</a>
+                            </p>
+                        </li>
+                        <li class="nav-item LogoItem  dropdown">
+                            <p class="d-flex"><img src="./Assets/service.png" class="LogoImg" alt="" width="40" height="40">
+                                <a class="nav-link" href="#">Service</a>
+                            </p>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="container d-flex gap-3 px-2 HostDiv" style="margin-left: 90px;">
+                    <a class="custom-host" href="">Become a host</a>
+                    <p class="Icon"><i class="fa-solid fa-globe"></i></p>
+                    <p class="Icon"><i class="fa-solid fa-bars"></i></p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container nav2">
+            <div class="d-flex align-items-center search-box">
+                <div class="customInput ">
+                    <small class="text-muted ms-3" style="color:black !important;">Where</small>
+                    <input type="text" class="form-control" placeholder="Search destinations">
+                </div>
+                <div class=" customInput ps-4">
+                    <small class="text-muted ms-3 " style="color:black !important;">Check in</small>
+                    <input type="text" class="form-control" placeholder="Add Dates">
+                </div>
+                <div class=" customInput ">
+                    <small class="text-muted ms-3 " style="color:black !important;">Check out</small>
+                    <input type="text" class="form-control" placeholder="Add Dates">
+                </div>
+                <div class=" customInput ">
+                    <small class="text-muted ms-3" style="color:black !important;">Who</small>
+                    <input type="text" class="form-control" placeholder="Add guests">
+                </div>
+                <button class="btn search-btn d-flex  gap-2 text-light ms-4 align-items-center p-3 rounded-circle"><i
+                        class="fa-solid fa-magnifying-glass text-light"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Cards Section -->
+    <section>
+        <div class="container-fluid ms-5"><br><br>
+            <h3>Popular homes in South Goa <small>></small></h3>
+            <div class="row d-flex HomeList">
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/beach.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/beach2.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/beach3.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/rustic.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/rustic2.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/rustic3.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/urban.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+               
+             
+                
+
+            <h3>Stay in Mumbai <small>></small></h3>
+            <div class="row d-flex HomeList">
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/urban2.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/urban3.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/mum1.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/mum2.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/mum3.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/mum4.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/mum5.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Available next month in Bengaluru<small>></small></h3>
+            <div class="row d-flex HomeList">
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang1.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang2.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang3.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang4.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang5.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang6.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4 col-md-1">
+                    <div class="card border-0 GuestCard" style="width: 11rem;">
+                        <img src="./Assets/bang7.webp" class="card-img-top CardImg" alt="...">
+                        <p class="card-text d-flex gap-5 StickyLine" style="font-size: 12px;"><span
+                                class="p-1 px-2 fw-bold"
+                                style="color: black; font-size: 10px; background-color: rgba(239, 232, 232, 0.9); border-radius: 10%;">Guest
+                                Favourite</span> <i class="fa-regular fa-heart text-light fa-2x"></i></p>
+                        <div class="card-body">
+                            <b style="font-size: 12px;">Guest House in Majorda</b>
+                            <p class="card-text" style="font-size: 12px;">₹2,282 for 2 nights <i
+                                    class="fa-solid fa-star"></i> 4.88</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+                
+               
+               
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer Section -->
+    <footer class="footerMain bg-light">
+        <div class="footerTop ms-5 " style="margin-left: 100px;">
+            <h3>Inspiration for future getaways</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link BTN active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Unique stays</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link BTN " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Categories</button>
+                </li>
+            </ul>
+            <div class="tab-content " id="myTabContent"> <br>
+                <div class="tab-pane fade show active mt-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+                   
+                    <div class="row ">
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Yurt Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Farm Houses </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Cottage Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Yurt Rentals </b></a>
+                                <a href="#">
+                                    <p>United Kingdom</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Farm Cottages</b></a>
+                                <a href="#">
+                                    <p>United Kingdom</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Holiday Cottages </b></a>
+                                <a href="#">
+                                    <p>United Kingdom</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Castle Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Cabin Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Mansion Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Houseboats </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Luxury Cabins </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Villa Rentals </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Holiday Caravans </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Luxury Cabins </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Holiday Bungalows </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Private Island Rentals</b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Holiday Chalets </b></a>
+                                <a href="#">
+                                    <p>United States</p>
+                                </a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Show More ^ </b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row " style="line-height: 2.9;">
+                        <div class="col col-2 " style="line-height: 2.9;">
+                            <div class="list1">
+                                <a href="#"><b>Amazing pools </b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Countryside</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>OMG!</b></a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Arctic</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Design</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Tiny homes</b></a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Camping</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Earth homes </b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Towers</b></a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Camper vans</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Farms </b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Windmills</b></a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Castles</b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>National parks </b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Luxe </b></a>
+                            </div>
+                        </div>
+                        <div class="col col-2">
+                            <div class="list1">
+                                <a href="#"><b>Containers </b></a>
+                            </div>
+                            <div class="list1">
+                                <a href="#"><b>Vineyard</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex ms-4 mt-5">
+            <div class="container">
+                <h5>Support</h5>
+                <p><a href="" class="text-decoration-none text-dark">Help Centre</a></p>
+                <p><a href="" class="text-decoration-none text-dark">AirCover</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> Anti-discrimination</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> Disability support</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Cancellation options</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Report neighbourhood concern</a></p>
+            </div>
+            <div class="container">
+                <h5>Hosting</h5>
+                <p><a href="" class="text-decoration-none text-dark">Airbnb your home</a></p>
+                <p><a href="" class="text-decoration-none text-dark">AirCover for Hosts</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> Hosting resources</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> Community forum</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Hosting responsibly</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Join a free Hosting class</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Find a co‑host</a></p>
+            </div>
+            <div class="container">
+                <h5>Airbnb</h5>
+                <p><a href="" class="text-decoration-none text-dark">2025 Summer Release</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Newsroom</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> New features</a></p>
+                <p><a href="" class="text-decoration-none text-dark"> Careers</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Investors</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Airbnb.org emergency stays</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid d-flex">
+            <div class="container-fluid d-flex mt-2">
+                &copy; 2025 Airbnb, Inc.
+                <ul class="d-flex gap-4" style="list-style-type: none;">
+                    <li><a class="EndFooList">· Privacy</a></li>
+                    <li><a class="EndFooList">· Terms</a></li>
+                    <li><a class="EndFooList">· Sitemap</a></li>
+                    <li><a class="EndFooList">· Company Details</a></li>
+                </ul>
+            </div>
+            <div class="container-fluid d-flex gap-3" style="padding-left: 440px;">
+                 <a class="custom-host d-flex gap-2"  href=""><b style="font-size: 13px; color:rgb(46, 45, 45)"><i class="fa-solid fa-globe mx-2"></i>English(IN)</b></a>
+                 <a class="custom-host d-flex gap-2"  href=""><b style="font-size: 13px; color:rgb(46, 45, 45)">₹ INR</b></a>
+                 <a class="IconBottom text-dark"><i class="fa-brands fa-facebook"></i></a>
+                 <a class="IconBottom text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+                 <a class="IconBottom text-dark"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

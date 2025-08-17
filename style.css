@@ -1,0 +1,209 @@
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HostDiv {
+    margin-right: 0 !important;
+
+}
+.HostDiv p{
+    margin-right: 0 !important;
+}
+
+.custom-host {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding:  10px;
+
+
+}
+
+.custom-host:hover {
+    background-color: gray;
+    border-radius: 50px;
+    color: black;
+}
+
+.LogoItem:hover{
+    color:rgb(42, 41, 41);
+
+}
+.LogoItem .active{
+    border-bottom: 3px solid;
+}
+
+.LogoImg {
+    transition: transform 0.3s ease; /* Apply transition to the <p> inside */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.LogoImg:hover {
+    transform: scale(1.2);
+}
+
+.Icon{
+    background-color: gainsboro;
+    padding:5px 12px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius:50%;
+
+}
+.Icon:hover{
+    background-color: rgb(144, 142, 142);
+}
+.IconBottom{
+    background-color: white;
+    padding:5px 12px;
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+.IconBottom:hover{
+    background-color: gainsboro;
+    border-radius: 50%;
+    
+}
+
+/* navbar second */
+.nav2 {
+    margin-left: 12% !important;
+
+}
+
+.search-box {
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    background-color: rgb(210, 209, 209);
+    overflow: hidden;
+    width: 85%;
+
+}
+
+.form-control {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: rgb(210, 209, 209) !important;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.form-control:hover {
+    background-color: white !important;
+    width: 89%;
+}
+
+.customInput {
+    background-color: rgb(210, 209, 209);
+    padding: 3px auto;
+    padding-left: 50px;
+    transition: transform 1s;
+}
+.customInput:hover {
+    background-color: white;
+    border-radius: 50px;
+
+    transform: scale 1.6s ease;
+}
+.search-btn {
+    background: linear-gradient(to right, #e91e63, #d81b60);
+    color: white;
+    border-radius: 100px;
+    padding: 6px 20px;
+}
+/* Card section */
+.HomeList {
+    display: flex;
+    gap: 5%;
+}
+.CardImg {
+    height: 180px !important;
+    width: 100%;
+    border-top-left-radius: 10% !important;
+    border-top-right-radius: 10% !important;
+    border-radius: 10%;
+}
+.GuestCard {
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.StickyLine {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    font-size: 12px;
+    z-index: 500;
+
+}
+/* Footer Section */
+
+.footerMain {
+    background-color: rgb(204, 203, 203);
+}
+.footerTop {
+    width: 100%;
+    margin-left: 30px !important;
+}
+.BTN{
+    color:gray !important;
+
+}
+.BTN:link{
+    background-color:rgb(204, 203, 203) !important;
+    border:none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:gray !important;
+
+}
+.BTN:hover{
+      background-color:rgb(204, 203, 203);
+    border:none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:black !important;
+
+}
+.BTN.active{
+    color:black !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+    border-bottom: 3px solid black !important;
+
+}
+.list1 a {
+    text-decoration: none;
+}
+.list1 a b {
+    color: rgb(76, 75, 75) !important;
+    font-size: 15px;
+}
+.list1 a p {
+    color: gray;
+}
+
+.list1 a p:hover {
+    color: black;
+}
+.EndFooList{
+    text-decoration: none;
+    color:#202020;
+}
+.EndFooList:hover{
+    text-decoration: underline;
+    color:#202020 ;
+}
